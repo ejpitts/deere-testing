@@ -6,10 +6,6 @@ describe("Given the App Component", () => {
   const component = shallow(<App />);
 
   it("should exist as a 'main' with a specifying class name", () => {
-    // expect(component.exists()).toBe(true);
-    // expect(component.hasClass("App")).toBe("true");
-
-    // ! Same as below
     expect(component.is("main.App")).toBe(true);
   });
 
